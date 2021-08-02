@@ -1,0 +1,2 @@
+# appSpoty
+Spoti app

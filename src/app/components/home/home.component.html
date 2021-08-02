@@ -1,0 +1,15 @@
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div *ngFor="let index of nuevosLanzamientos" class="col">
+        <div class="card h-100">
+            <img [src]="index.images[0].url" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"> {{index.name}} </h5>
+                <p class="card-text">
+                     <span *ngFor="let artista of index.artists" class="badge bg-info text-dark">
+                            {{ artista.name }}
+                     </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
